@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+    url("assert/background.png");
+  background-size: cover;
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
+  cursor: url("assert/cursur.png"), auto;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.logo {
+  color: #fff;
+  font-family: "Satisfy", cursive;
+  font-size: 56px;
+  text-shadow: 2px 1px black;
+}
+
+.cart-icon {
+  width: 30px;
+  cursor: url("assert/pointer.png"), auto;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  cursor: url("assert/pointer.png"), auto;
+}
+
+nav ul li a:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: width 0.3s;
+}
+nav ul li a:hover::after {
+  width: 50%;
+}
+
+.text-box {
+  color: #fff;
+  position: absolute;
+  bottom: 8%;
+}
+
+.text-box p {
+  font-size: 50px;
+  font-weight: 600;
+}
+.text-box h1 {
+  font-size: 190px;
+  line-height: 160px;
+  margin-left: -10px;
+  font-family: "Rubik Mono One", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url("assert/back.png");
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.text-box h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.text-box a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+  cursor: url("assert/pointer.png"), auto;
+}
+
+.social-icons {
+  position: absolute;
+  right: 5%;
+  bottom: 1%;
+}
+
+.social-icons img {
+  width: 25px;
+  display: block;
+  margin: 25px 5px;
+  cursor: url("assert/pointer.png"), auto;
+}
