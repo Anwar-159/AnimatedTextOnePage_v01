@@ -12,7 +12,7 @@
 .container {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url("assert/background.png");
+    url("assert/background.webP");
   background-size: cover;
   background-position: center;
   padding: 0 8%;
